@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tukar Sampah</title>
+    <link rel="stylesheet" href="styling/style.css" />
+    <link rel="stylesheet" href="styling/tukar_sampah.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Mukta+Mahee&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="content_80">
+        <div class="logo">
+          <a href="./landing_page.html">
+            <h3 id="Logo_EliTrash">EliTrash</h3>
+          </a>
+        </div>
+        <div class="rest">
+          <div class="nav_links">
+            <div style="position: relative">
+              <a class="links" href="#">Community</a>
+            </div>
+            <div style="position: relative">
+              <a class="links active-nav" href="#">Tukar Sampah</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="#">Bantuan</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="#">Tentang Kami</a>
+            </div>
+          </div>
+          <div class="account">
+            <div class="acc_pic">
+              <img src="assets/acc.png" alt="" id="account_pic" />
+            </div>
+
+            <div class="account_profile">
+              <p>Gading Mahendra</p>
+              <div class="lastt">
+                <img src="assets/koin.png" alt="" id="koin_pic" />
+                <p>420</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div style="display: flex; margin-bottom: 4em">
+        <div style="padding-right: 20px">
+          <p class="fs-montserrat title">Tukar Sampah</p>
+          <p class="fs-gothic sub-title">
+            Tukar sampah merupakan layanan yang mewadahi masyakarat untuk
+            melakukan pengumpulan sampah elektronik dan dapat menukarkannya di
+            beberapa tempat tertentu yang telah disediakan.
+          </p>
+        </div>
+        <div style="padding-right: 70px">
+          <img src="assets/tukar_sampah.png" />
+        </div>
+      </div>
+      <form>
+        <div class="form-wrapper third-width">
+          <div>
+            <label for="layanan">Jenis Layanan</label>
+            <div class="select-wrapper">
+              <select name="layanan" id="selectForm" class="select-input">
+                <option value="pick_up">Pick up</option>
+                <option value="Truck">Truck</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="drop_point">Drop point terdekat dari kamu</label>
+            <div class="select-wrapper">
+              <select name="drop_point" id="selectForm" class="select-input">
+                <option value="pick_up">Pick up</option>
+                <option value="Truck">Truck</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="berat">Berat Sampah (Kg)</label>
+            <div class="select-wrapper">
+              <input
+                placeholder="Masukkan berat"
+                class="select-input"
+                type="text"
+                name="berat"
+              />
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 49px" class="form-wrapper">
+          <div>
+            <label for="nama">Nama</label>
+            <div class="select-wrapper">
+              <input
+                placeholder="Masukkan nama kamu"
+                class="select-input fs-gothic"
+                type="text"
+                name="nama"
+              />
+            </div>
+          </div>
+          <div style="display: flex; gap: 3em">
+            <div style="flex-basis: 50%">
+              <label for="email">Email</label>
+              <div class="select-wrapper">
+                <input
+                  placeholder="Masukkan email kamu"
+                  class="select-input fs-gothic"
+                  type="text"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div style="flex-basis: 50%">
+              <label for="no_telp">No. Ponsel</label>
+              <div class="select-wrapper">
+                <input
+                  placeholder="Masukkan nomor kamu"
+                  class="select-input fs-gothic"
+                  type="text"
+                  name="no_telp"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="alamat">Alamat</label>
+            <div class="select-wrapper">
+              <textarea
+                placeholder="Masukkan alamat kamu"
+                class="select-input fs-gothic"
+                name="alamat"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <label for="foto_sampah">Foto Sampah</label>
+            <div class="select-wrapper">
+              <div style="position: relative">
+                <input
+                  id="inputFoto"
+                  placeholder="Masukkan nama kamu"
+                  class="select-input input-invisible"
+                  type="file"
+                  name="foto_sampah"
+                />
+                <div class="mock-button" onclick="clickFoto()">
+                  <img src="assets/foto.png" />
+                  <p>Maks. 3 Foto Sampah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="tukar-btn">Tukar</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="about_us">
+        <div class="about_us_blocks">
+          <h3 id="Logo_EliTrash">EliTrash</h3>
+          <h6>Pt. EliTrash Jaya</h6>
+          <p>Jl. Veteran Malang –<br />65145, East Java,<br />Indonesia.</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>Tentang Kami</h5>
+          <p>Profile</p>
+          <p>FAQ</p>
+          <p>Syarat dan Ketentuan</p>
+          <p>Kebijakan Privacy</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>Hubungi</h5>
+          <p>+628-123-456-789</p>
+          <p>asdfg@gmail.com</p>
+        </div>
+        <div class="about_us_blocks">
+          <h5>Follow Us</h5>
+          <div class="about_us_icon_block">
+            <img src="assets/ig.png" alt="" id="about_us_icons" />
+            <img src="assets/fb.png" alt="" id="about_us_icons" />
+            <img src="assets/twit.png" alt="" id="about_us_icons" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022 - PT. EliTrash. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function clickFoto() {
+      document.getElementById("inputFoto").click();
+    }
+  </script>
+</html>
