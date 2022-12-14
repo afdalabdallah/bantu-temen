@@ -4,32 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community</title>
+    <title>Tentang Kami</title>
     <link rel="stylesheet" href="styling/style.css" />
-    <link rel="stylesheet" href="styling/community.css" />
+    <link rel="stylesheet" href="styling/tentang.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Mukta+Mahee&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <style>
-      ::-webkit-scrollbar {
-        width: 5px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
   </head>
   <body>
     <nav>
@@ -42,18 +25,18 @@
         <div class="rest">
           <div class="nav_links">
             <div style="position: relative">
-              <a class="links active-nav" href="/community_page.html"
-                >Community</a
+              <a class="links" href="./community_page.html">Community</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./tukar_sampah.html">Tukar Sampah</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./bantuan_page.html">Bantuan</a>
+            </div>
+            <div style="position: relative">
+              <a class="links active-nav" href="./tentang_kami.html"
+                >Tentang Kami</a
               >
-            </div>
-            <div style="position: relative">
-              <a class="links" href="/tukar_sampah.html">Tukar Sampah</a>
-            </div>
-            <div style="position: relative">
-              <a class="links" href="/bantuan_page.html">Bantuan</a>
-            </div>
-            <div style="position: relative">
-              <a class="links" href="/tentang_kami.html">Tentang Kami</a>
             </div>
           </div>
           <div onclick="modalClick()" class="account">
@@ -81,31 +64,47 @@
     </nav>
     <div>
       <div class="image-main">
-        <img class="main-img" src="assets/community.png" />
+        <img class="main-img" src="assets/tentang.png" />
         <div class="text-img">
-          <h1>Community</h1>
-          <p>Mulai ikuti komunitas untuk bersama mengelola sampah elektronik</p>
+          <h1>Tentang Kami</h1>
         </div>
       </div>
-      <div class="main">
-        <div class="main-top">
-          <div style="display: flex; flex-basis: 50%; gap: 1.1em">
-            <div class="top-wrap top-active">My Community</div>
-            <div class="top-wrap">All Community</div>
-          </div>
-          <div class="search-wrapper" style="flex-basis: 50%">
-            <input
-              placeholder="Cari..."
-              class="search-input"
-              type="text"
-              name="search"
-            />
-            <img class="search-icon" src="assets/search.png" />
-          </div>
+      <div class="main-wrap">
+        <div class="fill-wrap">
+          <h4>VISI</h4>
+          <p>
+            Menjadi sebuah wadah serta gerakan sosial yang memberikan kemudahan
+            bagi masyarakat dalam mengurangi polusi sampah logam dan elektronik
+            dengan menyediakan layanan yang sangat bermanfaat dan mudah
+            digunakan oleh masyarakat.
+          </p>
         </div>
-        <div class="main-grid-wrapper">
-          <div id="mainGrid" class="main-grid">
-            <!-- Ini isi datanya ada di JS -->
+        <div class="fill-wrap">
+          <h4>MISI</h4>
+          <ol type="1">
+            <li>
+              Menciptakan lingkungan yang ramah dari polusi sampah logam dan
+              elektronik
+            </li>
+            <li>
+              Memberikan pengetahuan terkait sampah logam dan barang elektronik
+            </li>
+            <li>
+              Mampu memanfaatkan sampah logam dan barang elektronik menjadi
+              barang yang memiliki nilai tukar yang tinggi.
+            </li>
+          </ol>
+        </div>
+        <div class="fill-wrap">
+          <h4>ALAMAT</h4>
+          <div style="display: flex; gap: 21px">
+            <img src="assets/tentang_alamat.png" />
+            <div class="fs-gothic" style="font-size: 27px">
+              <p style="font-weight: 700; margin-bottom: 10px">
+                PT. EliTrash Jaya
+              </p>
+              <p>Jl. Veteran Malang - 65145 , East Java, Indonesia</p>
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +141,6 @@
         <p>Copyright © 2022 - PT. EliTrash. All rights reserved.</p>
       </div>
     </footer>
-    <script src="assets/js/community.js"></script>
     <script src="assets/js/modal.js"></script>
   </body>
 </html>

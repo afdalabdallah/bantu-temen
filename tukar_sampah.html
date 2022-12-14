@@ -26,19 +26,21 @@
         <div class="rest">
           <div class="nav_links">
             <div style="position: relative">
-              <a class="links" href="#">Community</a>
+              <a class="links" href="/community_page.html">Community</a>
             </div>
             <div style="position: relative">
-              <a class="links active-nav" href="#">Tukar Sampah</a>
+              <a class="links active-nav" href="/tukar_sampah.html"
+                >Tukar Sampah</a
+              >
             </div>
             <div style="position: relative">
-              <a class="links" href="#">Bantuan</a>
+              <a class="links" href="/bantuan_page.html">Bantuan</a>
             </div>
             <div style="position: relative">
-              <a class="links" href="#">Tentang Kami</a>
+              <a class="links" href="/tentang_kami.html">Tentang Kami</a>
             </div>
           </div>
-          <div class="account">
+          <div onclick="modalClick()" class="account">
             <div class="acc_pic">
               <img src="assets/acc.png" alt="" id="account_pic" />
             </div>
@@ -51,6 +53,13 @@
               </div>
             </div>
           </div>
+        </div>
+        <div id="modal" class="modal hidden">
+          <ul>
+            <a href="/profile_page.html"><li>Profile</li></a>
+            <a href="/point_page.html"><li>Points</li></a>
+            <a href="/register_page.html"><li>Log Out</li></a>
+          </ul>
         </div>
       </div>
     </nav>
@@ -207,4 +216,5 @@
       document.getElementById("inputFoto").click();
     }
   </script>
+  <script src="assets/js/modal.js"></script>
 </html>

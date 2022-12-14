@@ -1,10 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
   text-decoration: none;
   align-items: center;
   transition: 0.2s ease;
+}
+
+.hidden,
+.modal-hidden {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo > a {
+  text-decoration: none;
+}
+
+.logo > a:hover {
+  text-decoration: none;
 }
 
 .fs-poppins {
@@ -41,6 +58,44 @@
   line-height: 49px;
   color: white;
 }
+.modal,
+.modal-bs {
+  position: absolute;
+  display: grid;
+  gap: 8px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 0px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+  bottom: -6em;
+  right: 2em;
+  z-index: 3;
+}
+
+.modal a,
+.modal-bs a {
+  text-decoration: none;
+  color: black;
+}
+
+.modal li:hover,
+.modal-bs li:hover {
+  background-color: #989898;
+}
+
+.modal li,
+.modal-bs li {
+  font-family: "Mukta Mahee";
+  font-weight: 700;
+  font-size: 20px;
+  list-style: none;
+}
+.modal-bs a:hover {
+  text-decoration: none;
+  color: black;
+}
 
 nav {
   height: 100px;
@@ -57,6 +112,7 @@ nav .content_80 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  position: relative;
 }
 .rest {
   display: flex;
@@ -100,11 +156,16 @@ nav .content_80 {
   display: flex;
   flex-direction: row;
 }
+
+.nav_links a:hover {
+  text-decoration: none;
+}
 .links {
   font-family: "Mukta Mahee";
   font-weight: 700;
   font-size: 20px;
   line-height: 33px;
+  text-decoration: none;
   /* display: flex; */
   align-items: center;
   text-align: center;

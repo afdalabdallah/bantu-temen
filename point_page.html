@@ -4,32 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community</title>
+    <title>Point</title>
     <link rel="stylesheet" href="styling/style.css" />
-    <link rel="stylesheet" href="styling/community.css" />
+    <link rel="stylesheet" href="styling/point.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Mukta+Mahee&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <style>
-      ::-webkit-scrollbar {
-        width: 5px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
   </head>
   <body>
     <nav>
@@ -42,18 +25,16 @@
         <div class="rest">
           <div class="nav_links">
             <div style="position: relative">
-              <a class="links active-nav" href="/community_page.html"
-                >Community</a
-              >
+              <a class="links" href="./community_page.html">Community</a>
             </div>
             <div style="position: relative">
-              <a class="links" href="/tukar_sampah.html">Tukar Sampah</a>
+              <a class="links" href="./tukar_sampah.html">Tukar Sampah</a>
             </div>
             <div style="position: relative">
-              <a class="links" href="/bantuan_page.html">Bantuan</a>
+              <a class="links" href="./bantuan_page.html">Bantuan</a>
             </div>
             <div style="position: relative">
-              <a class="links" href="/tentang_kami.html">Tentang Kami</a>
+              <a class="links" href="./tentang_kami.html">Tentang Kami</a>
             </div>
           </div>
           <div onclick="modalClick()" class="account">
@@ -79,35 +60,68 @@
         </div>
       </div>
     </nav>
-    <div>
-      <div class="image-main">
-        <img class="main-img" src="assets/community.png" />
-        <div class="text-img">
-          <h1>Community</h1>
-          <p>Mulai ikuti komunitas untuk bersama mengelola sampah elektronik</p>
+    <div class="main-wrap">
+      <div style="display: flex; justify-content: space-between">
+        <div style="display: flex; gap: 51px">
+          <img width="142" src="assets/profile.png" alt="" />
+          <div class="user-text">
+            <h2 class="fs-montserrat">Username</h2>
+            <p class="fs-gothic">Member sejak 4 April 2022</p>
+            <div class="select-wrap">
+              <select>
+                <option value="">Reward yang bisa kamu tukarkan</option>
+                <option value="">Lorem ipsum dolor sit amet</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="points">
+          <h1>54</h1>
+          <p>Point</p>
         </div>
       </div>
-      <div class="main">
-        <div class="main-top">
-          <div style="display: flex; flex-basis: 50%; gap: 1.1em">
-            <div class="top-wrap top-active">My Community</div>
-            <div class="top-wrap">All Community</div>
+      <div class="riwayat">
+        <h1>Riwayat poin kamu</h1>
+        <div
+          style="display: grid; margin-top: 8px; margin-bottom: 38px; gap: 21px"
+        >
+          <div class="card">
+            <p>
+              Kamu berhasil mendapat poin dari aktivitas kamu pada tanggal 17
+              Juli 2022!
+            </p>
+            <p>+15 point</p>
           </div>
-          <div class="search-wrapper" style="flex-basis: 50%">
-            <input
-              placeholder="Cari..."
-              class="search-input"
-              type="text"
-              name="search"
-            />
-            <img class="search-icon" src="assets/search.png" />
+          <div class="card">
+            <p>
+              Kamu menukar poin kamu dengan reward pada tanggal 2 Juni 2022!
+            </p>
+            <p>-5 point</p>
+          </div>
+          <div class="card">
+            <p>
+              Kamu berhasil mendapat poin dari aktivitas kamu pada tanggal 15
+              Mei 2022!
+            </p>
+            <p>+15 point</p>
           </div>
         </div>
-        <div class="main-grid-wrapper">
-          <div id="mainGrid" class="main-grid">
-            <!-- Ini isi datanya ada di JS -->
+        <h1>Reward yang bisa kamu tukarkan</h1>
+        <div style="display: grid; margin-top: 8px; gap: 21px">
+          <div class="card">
+            <p>Reward 1</p>
+            <p>-5 point</p>
+          </div>
+          <div class="card">
+            <p>Reward 2</p>
+            <p>-5 point</p>
+          </div>
+          <div class="card">
+            <p>Reward 3</p>
+            <p>-5 point</p>
           </div>
         </div>
+        <button class="tukar-btn">Tukar</button>
       </div>
     </div>
     <footer>
@@ -142,7 +156,6 @@
         <p>Copyright © 2022 - PT. EliTrash. All rights reserved.</p>
       </div>
     </footer>
-    <script src="assets/js/community.js"></script>
     <script src="assets/js/modal.js"></script>
   </body>
 </html>

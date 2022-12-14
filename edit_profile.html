@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="styling/style.css" />
+    <link rel="stylesheet" href="styling/edit_profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Mukta+Mahee&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="content_80">
+        <div class="logo">
+          <a href="./landing_page.html">
+            <h3 id="Logo_EliTrash">EliTrash</h3>
+          </a>
+        </div>
+        <div class="rest">
+          <div class="nav_links">
+            <div style="position: relative">
+              <a class="links" href="./community_page.html">Community</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./tukar_sampah.html">Tukar Sampah</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./bantuan_page.html">Bantuan</a>
+            </div>
+            <div style="position: relative">
+              <a class="links" href="./tentang_kami.html">Tentang Kami</a>
+            </div>
+          </div>
+          <div onclick="modalClick()" class="account">
+            <div class="acc_pic">
+              <img src="assets/acc.png" alt="" id="account_pic" />
+            </div>
+
+            <div class="account_profile">
+              <p>Gading Mahendra</p>
+              <div class="lastt">
+                <img src="assets/koin.png" alt="" id="koin_pic" />
+                <p>420</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modal" class="modal hidden">
+          <ul>
+            <a href="/profile_page.html"><li>Profile</li></a>
+            <a href="/point_page.html"><li>Points</li></a>
+            <a href="/register_page.html"><li>Log Out</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="main-containier"
+      style="position: relative; background-color: #f6f6f6"
+    >
+      <div style="display: flex; padding: 30px 60px; gap: 60px">
+        <div class="left-part">
+          <h1>Edit Profile</h1>
+          <img src="/assets/profile.png" alt="" />
+        </div>
+        <form class="form-wrap" action="">
+          <div class="form-grid" style="display: grid; gap: 35px">
+            <div>
+              <label for="nama">Nama</label>
+              <div class="input-wrapper">
+                <input type="text" name="nama" />
+              </div>
+            </div>
+            <div>
+              <label for="no_telp">Nomor Telepon</label>
+              <div class="input-wrapper">
+                <input type="text" name="no_telp" />
+              </div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <div class="input-wrapper">
+                <input type="email" name="email" />
+              </div>
+            </div>
+            <div>
+              <label for="alamat">Alamat Lengkap</label>
+              <div class="input-wrapper">
+                <input type="text" name="alamat" />
+              </div>
+            </div>
+            <div>
+              <label for="kota">Kota</label>
+              <div class="input-wrapper"><input type="text" name="kota" /></div>
+            </div>
+            <div>
+              <label for="negara">Negara</label>
+              <div class="input-wrapper">
+                <input type="text" name="Negara" />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 69px;
+            "
+          >
+            <button
+              onclick="window.location.href='/profile_page.html'"
+              type="button"
+              class="tukar-btn"
+            >
+              Kembali
+            </button>
+            <button type="button" class="tukar-btn">Simpan</button>
+          </div>
+        </form>
+      </div>
+
+      <img
+        style="background-color: #f6f6f6"
+        width="100%"
+        src="assets/edit_profile.svg"
+        class="edit-img"
+      />
+    </div>
+    <script src="assets/js/modal.js"></script>
+  </body>
+</html>
